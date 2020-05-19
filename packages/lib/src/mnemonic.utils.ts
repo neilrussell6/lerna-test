@@ -18,3 +18,6 @@ export const generateMnemonic = (
   return Bip39 .generateMnemonic  ()
 
 }
+
+
+
