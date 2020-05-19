@@ -11,12 +11,9 @@ export const generateMnemonic = (
 {
 
 
-  console.log('xxxx')
+  console.log('xxxxxxx')
   return Bip39 .generateMnemonic  ()
 
 }
-
-
-
 
 
