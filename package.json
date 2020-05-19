@@ -9,7 +9,8 @@
     "pkg:build": "lerna run build --stream --concurrency=1",
     "pkg:test": "lerna run test --stream --concurrency=1 -- --colors",
     "pkg:lint": "lerna run lint --stream --concurrency=1 -- --colors",
-    "pkg:cli": "npm run main --prefix ./packages/cli"
+    "pkg:cli": "npm run main --prefix ./packages/cli",
+    "pkg:pre-commit": "lerna run _pre-commit --concurrency 1 --stream --since HEAD"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
@@ -25,7 +26,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lerna run pre-commit --staged --concurrency 1 --stream --since HEAD"
+      "pre-commit": "lint-staged"
     }
   }
 }

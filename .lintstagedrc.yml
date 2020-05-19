@@ -1,0 +1,7 @@
+"packages/lib/*.ts":
+  - prettier --write
+  - eslint --fix
+  - git add
+"packages/cli/*.js":
+  - npm run --silent lerna:lint:js
+  - git add

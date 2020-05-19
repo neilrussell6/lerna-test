@@ -7,7 +7,10 @@
     "main": "node src/index.js",
     "test": "jest --ci --config jest.node.config.js --verbose --passWithNoTests",
     "test:watch": "npm run test -- --watch",
-    "lint": "eslint --ext .js ."
+    "lint": "eslint --ext .js .",
+    "_lint:fix": "npm run eslint . --ext .js --fix",
+    "_prettier:write": "npm run prettier --write",
+    "_pre-commit": "npm-run-all _lint:fix _prettier:write"
   },
   "keywords": [],
   "author": "Neil Russell <neilrussell6@gmail.com>",
@@ -32,10 +35,5 @@
     "jest": "^25.1.0",
     "lint-staged": "^10.2.4",
     "prettier": "^2.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
