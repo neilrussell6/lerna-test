@@ -40,5 +40,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write", "eslint --fix", "git add"]
   }
 }
