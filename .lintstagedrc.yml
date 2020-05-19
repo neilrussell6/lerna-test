@@ -1,7 +1,4 @@
 "packages/lib/*.ts":
-  - prettier --write
-  - eslint --fix
-  - git add
+  - npm run pkg:pre-commit
 "packages/cli/*.js":
-  - npm run --silent lerna:lint:js
-  - git add
+  - npm run pkg:pre-commit
