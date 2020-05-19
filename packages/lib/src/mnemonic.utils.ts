@@ -11,7 +11,7 @@ export const generateMnemonic = (
 {
 
 
-  console.log('xxxxxxx')
+  console.log('xxxxxxxxssxx')
   return Bip39 .generateMnemonic  ()
 
 }
