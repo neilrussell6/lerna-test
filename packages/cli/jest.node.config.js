@@ -1,7 +1,7 @@
 const jestNodeConfig = {
   testEnvironment: 'node',
   transform: {
-    '^.+\\.ts?$': 'ts-jest',
+    '^.+\\.js?$': 'babel-jest',
   },
   testMatch: ['<rootDir>/src/**/*.test.js'],
 }

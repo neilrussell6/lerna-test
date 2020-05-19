@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ----------------------------
+# package
+# ----------------------------
+
+# Javascript : dependencies
+#
+node_modules
+.pnp
+.pnp.js
+
+# Javascript : testing
+#
+coverage
+.nyc_output/
+
+# Javascript : build
+#
+build
+
+# Javascript : misc
+#
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+#
+.env
+
+# Misc
+#
+.backups

@@ -1,0 +1,39 @@
+{
+  "name": "@lerna-test/cli",
+  "version": "0.1.0",
+  "description": "A CLI for Crypto Wallet tools for the 3 big blockchains",
+  "main": "src/index.js",
+  "scripts": {
+    "main": "node src/index.js",
+    "test": "jest --ci --config jest.node.config.js --verbose --passWithNoTests",
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint --ext .js ."
+  },
+  "keywords": [],
+  "author": "Neil Russell <neilrussell6@gmail.com>",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@lerna-test/lib": "^0.1.0",
+    "ramda": "^0.27.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^25.1.0",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

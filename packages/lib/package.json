@@ -1,14 +1,14 @@
 {
-  "name": "crypto-wallet-tools",
-  "version": "1.0.0",
+  "name": "@lerna-test/lib",
+  "version": "0.1.0",
   "description": "A lib of Crypto Wallet tools for the 3 big blockchains",
   "main": "dist/index.js",
-  "types": "./typings/index.d.ts",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
     "test": "jest --ci --config jest.node.config.js --verbose",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint --ext .ts ."
   },
   "keywords": [],
   "author": "Neil Russell <neilrussell6@gmail.com>",
@@ -17,12 +17,24 @@
     "access": "public"
   },
   "dependencies": {
+    "@types/ramda": "^0.27.6",
     "bip39": "^3.0.2",
     "ramda": "^0.27.0"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^7.0.0",
     "jest": "^25.1.0",
     "js-parametrize": "0.0.3",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
     "typescript": "^3.9.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
