@@ -26,7 +26,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lerna run pre-commit --concurrency 1 --stream --since HEAD"
+      "pre-commit": "lerna run _pre-commit --concurrency 1 --stream --since HEAD"
     }
   }
 }
