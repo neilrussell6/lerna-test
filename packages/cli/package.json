@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js .",
     "_lint:fix": "npm run eslint . --ext .ts --fix",
     "_prettier:write": "npm run prettier --write",
-    "_pre-commit": "npm-run-all _lint:fix _prettier:write"
+    "_pre-commit": "lint-staged && npm run test"
   },
   "keywords": [],
   "author": "Neil Russell <neilrussell6@gmail.com>",
@@ -35,11 +35,6 @@
     "jest": "^25.1.0",
     "lint-staged": "^10.2.4",
     "prettier": "^2.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": ["prettier --write", "eslint --fix"]
