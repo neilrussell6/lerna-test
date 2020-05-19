@@ -1,0 +1,14 @@
+{
+  "l:ls": "List all packages",
+  "l:bootstrap": "Bootstrap all packages, installing all their dependencies and linking any cross-dependencies",
+  "pkg:build": "Run build script on all packages",
+  "pkg:test": "Run test script on all packages",
+  "publish-release":  "",
+  "publish-dist-tag": "",
+  "prepare-release":  "",
+  "test": "",
+  "ci":  "",
+  "geth": "",
+  "solc-bump":  "",
+  "update": ""
+}

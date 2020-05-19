@@ -1,0 +1,27 @@
+{
+  "name": "crypto-wallet-tools",
+  "version": "1.0.0",
+  "description": "A lib of Crypto Wallet tools for the 3 big blockchains",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "jest --ci --config jest.node.config.js --verbose",
+    "test:watch": "npm run test -- --watch"
+  },
+  "keywords": [],
+  "author": "Neil Russell <neilrussell6@gmail.com>",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "bip39": "^3.0.2",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "js-parametrize": "0.0.3",
+    "typescript": "^3.9.2"
+  }
+}
