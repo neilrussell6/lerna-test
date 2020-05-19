@@ -1,5 +1,4 @@
-linters:
-  src/*.ts:
-    - prettier --write
-    - eslint --fix
-    - git add
+src/**/*.ts:
+  - prettier --write
+  - eslint --fix
+  - git add

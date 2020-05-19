@@ -26,8 +26,10 @@
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "eslint": "^7.0.0",
+    "husky": "^4.2.5",
     "jest": "^25.1.0",
     "js-parametrize": "0.0.3",
+    "lint-staged": "^10.2.4",
     "prettier": "^2.0.5",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.2"
