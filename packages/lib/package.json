@@ -37,5 +37,10 @@
     "prettier": "^2.0.5",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
