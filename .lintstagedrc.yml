@@ -1,2 +1,2 @@
-"*.ts": "npm run pkg:pre-commit"
-"*.js": "npm run pkg:pre-commit"
+"packages/lib/*.ts": "npm run pkg:pre-commit"
+"packages/cli/*.js": "npm run pkg:pre-commit"
