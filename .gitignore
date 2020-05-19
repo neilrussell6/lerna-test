@@ -19,18 +19,18 @@
 
 # Javascript : dependencies
 #
-/node_modules
-/.pnp
+node_modules
+.pnp
 .pnp.js
 
 # Javascript : testing
 #
-/coverage
+coverage
 .nyc_output/
 
 # Javascript : build
 #
-/build
+build
 
 # Javascript : misc
 #
