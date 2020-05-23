@@ -1,6 +1,6 @@
 {
   "name": "@lerna-test/lib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lib of Crypto Wallet tools for the 3 big blockchains",
   "main": "dist/index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@lerna-test/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI for Crypto Wallet tools for the 3 big blockchains",
   "main": "src/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@lerna-test/lib": "^0.1.0",
+    "@lerna-test/lib": "^0.1.1",
     "ramda": "^0.27.0",
     "yargs": "^15.3.1"
   },
